@@ -61,22 +61,6 @@ spring:
       properties:
         spring.json.add.type.headers: false
 
-    consumer:
-      group-id: my-email-service-group
-      auto-offset-reset: earliest
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-      auto-startup: true
-      properties:
-        spring.json.trusted.packages: "com.example.notificationhandlers"
-        spring.json.use.type.headers: false
-        spring.json.value.default.type: com.example.notificationhandlers.ServiceEventDto
-
-    listener:
-      type: single
-      ack-mode: manual
-      auto-startup: true
-
 app:
   kafka:
     topics:
