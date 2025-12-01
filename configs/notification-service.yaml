@@ -30,7 +30,7 @@ spring:
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-      auto-startup: true
+      auto-startup: false
       properties:
         spring.json.trusted.packages: "com.example.notificationhandlers"
         spring.json.use.type.headers: false
@@ -39,7 +39,7 @@ spring:
     listener:
       type: single
       ack-mode: manual
-      auto-startup: true
+      auto-startup: false
 
 app:
   kafka:
