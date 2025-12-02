@@ -32,9 +32,9 @@ spring:
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       auto-startup: true
       properties:
-        spring.json.trusted.packages: "com.example.notificationhandlers"
+        spring.json.trusted.packages: "com.example"
         spring.json.use.type.headers: false
-        spring.json.value.default.type: com.example.notificationhandlers.ServiceEventDto
+        spring.json.value.default.type: com.example.ServiceEventDto
     
     listener:
       type: single
