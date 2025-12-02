@@ -60,7 +60,6 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
         spring.json.add.type.headers: true
-        spring.json.type.mapping: ServiceEventDto:com.example.ServiceEventDto
 
 app:
   kafka:
