@@ -33,7 +33,7 @@ spring:
       auto-startup: true
       properties:
         spring.json.trusted.packages: "com.example"
-        spring.json.use.type.headers: false
+        spring.json.use.type.headers: true
         spring.json.value.default.type: com.example.ServiceEventDto
     
     listener:
